@@ -1,0 +1,100 @@
+$yellow: #FC0;
+$black: #333;
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 6vw;
+  scroll-behavior: smooth;
+}
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.black,
+.black a {
+  color: $yellow;
+  background: $black;
+}
+.yellow,
+.yellow a {
+  background: $yellow;
+  color: $black;
+}
+p {
+  max-width: 60vw;
+  margin: 0 auto;
+  line-height: 140%;
+}
+code {
+  font-family: "Droid Sans Mono", monospace;
+}
+.lead {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 115%;
+}
+.credit {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.credit a {
+  color: rgba(0, 0, 0, 0.25);
+  padding: 0 0.5vw;
+}
+.credit a:hover {
+  color: rgba(0, 0, 0, 0.75);
+  transition: 1s ease-out;
+}
+
+@mixin arrow($length) {
+  a {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: $length * 2;
+    height: $length * 2;
+    padding: 0 $length / 2;;
+
+    .arrow {
+      display: block;
+      border-right: solid 4px;
+      border-bottom: solid 4px;
+      transform: rotate(45deg);
+      transform-origin: bottom right;
+      margin-top: $length / 4;
+      margin-left: - $length / 4;
+      width: $length;
+      height: $length;
+    }
+  }
+}
+
+.next {
+  @include arrow(2vw);
+}
+
+@media (max-width: 480px) {
+  section {
+    font-size: 6.5vw;
+  }
+  p {
+    font-size: 115%;
+  }
+  .next {
+    @include arrow(4vw);
+  }
+}
+@media (min-width: 1200px) {
+  section {
+    font-size: 5vw;
+  }
+}
