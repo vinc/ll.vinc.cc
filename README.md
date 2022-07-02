@@ -15,7 +15,7 @@ A light-league is the distance travelled by light in 10 billionths of a day.
 
 * * *
 
-It's about the same as the unit used in Ancient Rome.
+It is close to the ancient celtic league.
 
     1 ll = 2.59020683712 km
 
