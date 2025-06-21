@@ -9,7 +9,7 @@ What about a new unit of length instead?
 
 * * *
 
-A light-league is the distance travelled by light in one ten-billionth of a day.
+A light-league is the distance traveled by light in one ten-billionth of a day.
 
     1 ll = 10^-10 d
 
