@@ -28,4 +28,4 @@ A light-league is to a mile what a mile is to a kilometer.
 
 * * *
 
-It's a pretty cool unit.
+It's a pretty neat unit.
